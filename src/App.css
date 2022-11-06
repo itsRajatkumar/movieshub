@@ -1,5 +1,9 @@
 body {
 	background: #141414;
+	color: #000000;
+}
+
+.color-white-text {
 	color: #ffffff;
 }
 
@@ -35,10 +39,24 @@ body {
 }
 
 .mybox{
+    width: 25%;
+    height: 620px;
+
+}
+
+.card{
   display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    width: 33%;
-    height: 100%;
+    height: 95%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-body{
+  flex: none;
+}
+
+.row-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

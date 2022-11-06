@@ -1,5 +1,5 @@
 import React from 'react';
-
+import  { Link } from 'react-router-dom'
 const MovieList = (props) => {
 	const FavouriteComponent = props.favouriteComponent;
 	return (
@@ -11,7 +11,8 @@ const MovieList = (props) => {
 				<div className="card-body">
 				  <h5 className="card-title black">{movie.Title}</h5>
 				  <p className="card-text black">{movie.Year}</p>
-				  <a href="#" className="btn btn-primary">More Details</a>
+				  <Link to={`/${movie.imdbID}`}  className="btn btn-primary">More Details</Link>
+				  <button onClick={() => props.handleFavouritesClick(movie)} className="btn btn-primary mt-2"><FavouriteComponent></FavouriteComponent></button>
 				</div>
 			  </div>
 				{/* <div className='image-container d-flex justify-content-start m-3'>

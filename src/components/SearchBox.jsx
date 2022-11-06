@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
 const SearchBox = (props) => {
     const [current, setCurrent] = useState("");
@@ -8,7 +8,10 @@ const SearchBox = (props) => {
         props.setSearchValue(current);
     }
     return (
-        <div className='col col-sm-4'>
+        <nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <Link className='navbar-brand' to="/">Movies Hub</Link>
+    <div className='col col-sm-4'>
             <form class="d-flex" role="search" onSubmit={changeVal}>
                 <input
                     class="form-control me-2"
@@ -21,6 +24,8 @@ const SearchBox = (props) => {
                 <button class="btn btn-outline-success" type='submit'>Search</button>
             </form>
         </div>
+  </div>
+</nav>
     );
 };
 
