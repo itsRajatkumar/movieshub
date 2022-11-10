@@ -10,7 +10,7 @@ const SearchBox = (props) => {
     return (
         <nav className="navbar navbar-dark bg-dark">
   <div className="container-fluid">
-    <Link className='navbar-brand' to="/">Movies Hub</Link>
+    <Link className='navbar-brand' to="/movieshub">Movies Hub</Link>
     <div className='col col-sm-4'>
             <form className="d-flex" role="search" onSubmit={changeVal}>
                 <input

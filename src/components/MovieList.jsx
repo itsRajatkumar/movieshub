@@ -11,7 +11,7 @@ const MovieList = (props) => {
 				<div className="card-body">
 				  <h5 className="card-title black">{movie.Title}</h5>
 				  <p className="card-text black">{movie.Year}</p>
-				  <Link to={`/${movie.imdbID}`}  className="btn btn-primary">More Details</Link>
+				  <Link to={`movieshub/${movie.imdbID}`}  className="btn btn-primary">More Details</Link>
 				  <button onClick={() => props.handleFavouritesClick(movie)} className="btn btn-primary mt-2"><FavouriteComponent></FavouriteComponent></button>
 				</div>
 			  </div>
