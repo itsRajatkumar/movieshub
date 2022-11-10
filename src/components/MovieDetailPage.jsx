@@ -35,28 +35,28 @@ const MovieDetailPage = () => {
         <div className='container color-white-text'>
             <div className="row">
                 <div className="col row-flex">
-                    <img src={data?.Poster} class="img-fluid mt-4" alt="..."></img>
-                    <div class="badge bg-primary text-wrap">
+                    <img src={data?.Poster} className="img-fluid mt-4" alt="..."></img>
+                    <div className="badge bg-primary text-wrap">
                         {data?.Genre}
                     </div>
                 </div>
                 <div className="col-lg mt-4">
-                    <p class="h1">{data?.Title}</p>
-                    <p class="font-monospace">{data?.Released} | {`${parseInt(parseInt(data?.Runtime)/60)}:${parseInt((parseInt(data?.Runtime)%60))} Min`} | {data?.Language}</p>
-                    <p class="lead">
+                    <p className="h1">{data?.Title}</p>
+                    <p className="font-monospace">{data?.Released} | {`${parseInt(parseInt(data?.Runtime)/60)}:${parseInt((parseInt(data?.Runtime)%60))} Min`} | {data?.Language}</p>
+                    <p className="lead">
                         {data?.Plot}
                     </p>
                     <h5>
                         Cast:- 
-                        <small class="text-muted">{` ${data?.Actors}`}</small>
+                        <small className="text-muted">{` ${data?.Actors}`}</small>
                     </h5>
                     <h5>
                         Director:- 
-                        <small class="text-muted">{` ${data?.Director}`}</small>
+                        <small className="text-muted">{` ${data?.Director}`}</small>
                     </h5>
                     <h5>
                         Writer:- 
-                        <small class="text-muted">{` ${data?.Writer}`}</small>
+                        <small className="text-muted">{` ${data?.Writer}`}</small>
                     </h5>
                 </div>
             </div>
